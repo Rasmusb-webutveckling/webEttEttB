@@ -1,10 +1,10 @@
-const colorList : string[] = ["red", "black", "orange", "blue"];
+const colorList : string[] = ["red", "green", "yellow", "blue"];
 
 function start():void {
-    const interations:number = 200;
+    const interations:number = 10000;
 
     for (let index:number = 0; index < interations; index++){
-        rectangle(random(200), random(200), 10, 10, "blue");
+        rectangle(random(200), random(200), 10, 10, getRandomColor());
     }
 }
 
